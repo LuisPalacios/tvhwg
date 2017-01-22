@@ -19,12 +19,12 @@ canales que me faltan.
 
 Consulta este apunte [WebGrab+Plus con TVHeadEnd en Linux](http://www.luispa.com/archivos/1587) donde
 describo cómo preparar el programa. En mi caso he instalado el programa en 
-el home de mi usuario linux `/home/luis/wg++`
+el home de mi usuario linux `/home/luis/tvhwg`
 
 
 ## Configuración
 
-Copiar al directorio donde lo instalaste, en mi caso `/home/luis/wg++`
+Copiar al directorio donde lo instalaste, en mi caso `/home/luis/tvhwg`, de forma sencilla con `git clone https://github.com/LuisPalacios/tvhwg.git`
 
 * WebGrab++.config.xml : Fichero de configuración para el programa
 * categorias.pl : Postprocesador para cambiar las categorías
@@ -38,8 +38,8 @@ Grabber interno que configuras en Tvheadend, copiar a `/usr/bin/tv_grab_wg`
 
 Ficheros de arranque y programación de systemd, copiar a `/etc/systemd/system`
 
-* tvhguia-wg.service : Servicio para ejecutar wg++.sh
-* tvhguia-wg.timer : Cada cuanto tiempo programo su ejecución
+* tvhwg.service : Servicio para ejecutar wg++.sh
+* tvhwg.timer : Cada cuanto tiempo programo su ejecución
 
 ## IMPORTANTE
 
@@ -52,5 +52,5 @@ así que revísalos para adaptarlos a tu instalación concreta.
 
 - /etc/tvheadend : Configuración de `Tvheadend`
 - /home/luis/tvhstar : Lugar donde instalo `tvhstar` y sus ficheros de configuración.
-- /home/luis/wg++ : Lugar donde instalo `WebGrab+Plus` y sus ficheros de configuración.
+- /home/luis/tvhwg : Lugar donde instalo `WebGrab+Plus` y sus ficheros de configuración.
 - /home/luis/guia : Lugar donde dejo los ficheros XMLTV generadas por `tvhstar` y `WebGrab+Plus`

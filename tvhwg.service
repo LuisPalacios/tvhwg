@@ -4,7 +4,7 @@ After=syslog.target network.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /home/luis/wg++/wg++.sh
+ExecStart=/bin/bash /home/luis/tvhwg/wg++.sh
 
 [Install]
 WantedBy=multi-user.target
