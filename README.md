@@ -24,7 +24,7 @@ el home de mi usuario linux `/home/luis/wg++`
 
 ## Configuración
 
-Ficheros apra WebGrab+Plus, al directorio de instalación, en mi caso `/home/luis/wg++`
+Copiar al directorio donde lo instalaste, en mi caso `/home/luis/wg++`
 
 * WebGrab++.config.xml : Fichero de configuración para el programa
 * categorias.pl : Postprocesador para cambiar las categorías
@@ -40,3 +40,17 @@ Ficheros de arranque y programación de systemd, copiar a `/etc/systemd/system`
 
 * tvhguia-wg.service : Servicio para ejecutar wg++.sh
 * tvhguia-wg.timer : Cada cuanto tiempo programo su ejecución
+
+## IMPORTANTE
+
+En mi caso instalo [Tvheadend](http://www.luispa.com/archivos/4571), 
+[tvhstar](https://github.com/LuisPalacios/tvhstar) y [WebGrab+Plus](http://www.luispa.com/archivos/1587)
+en el mismo equipo linux. 
+
+Estos son todos los directorios de trabajo y los tengo `HARDCODED`en todos mis scripts, 
+así que revísalos para adaptarlos a tu instalación concreta. 
+
+- /etc/tvheadend : Configuración de `Tvheadend`
+- /home/luis/tvhstar : Lugar donde instalo `tvhstar` y sus ficheros de configuración.
+- /home/luis/wg++ : Lugar donde instalo `WebGrab+Plus` y sus ficheros de configuración.
+- /home/luis/guia : Lugar donde dejo los ficheros XMLTV generadas por `tvhstar` y `WebGrab+Plus`
