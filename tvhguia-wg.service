@@ -1,0 +1,10 @@
+[Unit]
+Description=Obtener guia via WebGrab++
+After=syslog.target network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/luis/wg++/wg++.sh
+
+[Install]
+WantedBy=multi-user.target

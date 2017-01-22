@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- Configuration file for WebGrab+Plus, the incremental Electronic-Program-Guide web grabber
+by Jan van Straaten, December 2011
+Version V1.1.1 -->
+<settings>
+    <!-- Fichero de configuración de WebGrab para bajarme el EPG de movistar desde fuentes alternativas -->
+    <!-- filename - Ruta completa del archivo EPG (Guia) que se generará 
+      -->
+    <filename>/tmp/guia-wg.xml</filename>
+    <!-- mode - Opción para detectar los errores que pudieran surgir, lo dejo vacío -->
+    <mode>v</mode>
+    <!-- user-agent - Opción para simular que soy otro navegador -->
+    <user-agent>Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; yie9)</user-agent>
+    <!-- postprocess - Extraer más metadatos de la EPG usando REX.    -->
+    <!--               Recomiendan usar los siguiente:                -->
+    <!--               <postprocess run="y" grab="y">n</postprocess>  -->
+    <postprocess grab="y" run="y"></postprocess>
+    <!-- logging - Activar o no el logging  -->
+    <logging>on</logging>
+    <!-- retry - veces que debe reintentar descargar la info de una web si falla  -->
+    <retry time-out="5">4</retry>
+    <!-- skip - Pdte de documentar -->
+    <skip>noskip</skip>
+    <!-- timespan - Número de días futuros que queremos que nos descargue la guía,
+                  es el número de días además del día de hoy, un 3 serían 4 días -->
+    <timespan>2</timespan>
+    <!-- update - forzar globalmente cómo hacer las actualizaciones -->
+    <!-- i incremental only updates of changes , gabs, repairs and new shows
+       l light forces update of today and new shows, rest as incremental
+       s smart forces update of today and tomorrow and new shows, rest as light
+       f full forces full update
+       f force
+      -->
+    <update>s</update>
+    <!--Spain
+      -->
+    <channel update="i" site="elmundo.es" site_id="38" xmltv_id="Telemadrid.es">TeleMadrid</channel>
+    <channel update="i" site="elmundo.es" site_id="39" xmltv_id="OTRA.es">La Otra</channel>
+    <channel update="i" site="elmundo.es" site_id="689" xmltv_id="13TV.es">13 TV</channel>
+</settings>

@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer guia via WebGrab++
+
+[Timer]
+OnUnitActiveSec=6h
+OnBootSec=10s
+
+[Install]
+WantedBy=timers.target
